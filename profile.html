@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Attendify</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <div id="calendar"></div>
+    <form id="profileForm">
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit">Update Profile</button>
+    </form>
+    <form id="feedbackForm" onsubmit="return submitFeedback()">
+        <textarea id="feedbackMessage" placeholder="Your feedback"></textarea>
+        <button type="submit">Submit Feedback</button>
+    </form>
+    <script src="js/profile.js"></script>
+</body>
+</html>
